@@ -6,6 +6,76 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ex17MediaLP1",
+      "request": "launch",
+      "mainClass": "Ex17MediaLP1",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex16BalancoGastos",
+      "request": "launch",
+      "mainClass": "Ex16BalancoGastos",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex15SalarioTotal",
+      "request": "launch",
+      "mainClass": "Ex15SalarioTotal",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex14DuracaoJogo",
+      "request": "launch",
+      "mainClass": "Ex14DuracaoJogo",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex13OrdemCrescente",
+      "request": "launch",
+      "mainClass": "Ex13OrdemCrescente",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex12MaiorNumero",
+      "request": "launch",
+      "mainClass": "Ex12MaiorNumero",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex11VerificadorIdade",
+      "request": "launch",
+      "mainClass": "Ex11VerificadorIdade",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex10MediaFinal",
+      "request": "launch",
+      "mainClass": "Ex10MediaFinal",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex9CustoTotalMacas",
+      "request": "launch",
+      "mainClass": "Ex9CustoTotalMacas",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
+      "name": "Ex8VerificadorPositivoNegativo",
+      "request": "launch",
+      "mainClass": "Ex8VerificadorPositivoNegativo",
+      "projectName": "tarefa1_3599af03"
+    },
+    {
+      "type": "java",
       "name": "Ex7VerificadorMaiorQue10",
       "request": "launch",
       "mainClass": "Ex7VerificadorMaiorQue10",
