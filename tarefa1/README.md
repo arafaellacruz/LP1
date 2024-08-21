@@ -6,6 +6,7 @@ Criar programas para os exercícios abaixo, juntamente com teste de mesa para ca
 *Obs1.:* Teste de mesa as colunas são atributos, variaveis, metodos ou variavel criada no metodo para retornar resultado e para finalizar, a saída que o código me retorna.<br>
 *Obs2.:* Caso o código tenha condições, é necessário criar mais de um registro exemplificando cada cenário.
 
+## Exercícios - Testes de Mesa
 1. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
    
     | Dias | Meses | Anos |         `converterIdade()`            | Saída |
