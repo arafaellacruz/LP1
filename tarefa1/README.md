@@ -1,10 +1,10 @@
 # Tarefa 1 - JAVA
 
-- Os programas estão no diretório ´/src/´
-- Os enunciados e testes de mesa estão logo abaixo.
-
 Criar programas para os exercícios abaixo, juntamente com teste de mesa para cada um. <br>
 **Entrega**: 22/08/2024 - *Teams*
+
+- Os programas estão no diretório ´/src/´
+- Os enunciados e testes de mesa estão logo abaixo.
 
 *Obs1.:* Teste de mesa as colunas são atributos, variaveis, metodos ou variavel criada no metodo para retornar resultado e para finalizar, a saída que o código me retorna.<br>
 *Obs2.:* Caso o código tenha condições, é necessário criar mais de um registro exemplificando cada cenário.
