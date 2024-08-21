@@ -1,5 +1,8 @@
 # Tarefa 1 - JAVA
 
+- Os programas estão no diretório ´/src/´
+- Os enunciados e testes de mesa estão logo abaixo.
+
 Criar programas para os exercícios abaixo, juntamente com teste de mesa para cada um. <br>
 **Entrega**: 22/08/2024 - *Teams*
 
