@@ -12,7 +12,7 @@ public class Ex2Eleitores {
         this.nulos = nulos;
         this.validos = validos;
     }
-    // Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+    // Calcular o percentual que cada um representa em relação ao total de eleitores.
     public double calcularBrancos() {
         return ((brancos / eleitores) * 100);
     }
@@ -25,8 +25,13 @@ public class Ex2Eleitores {
         return ((validos / eleitores) * 100);
     }
 
+    // Escrever o percentual que cada um representa em relação ao total de eleitores
     public static void main(String[] args) {
+        // Instanciando a classe Ex2Eleitores e criando um objeto a partir dela (e) - Passando os parâmetros com base nos atributos
         Ex2Eleitores e = new Ex2Eleitores(1000, 350, 250, 400);
+
+        //  
+        System.out.println("Resultados da Eleição: ");
 
         System.out.println("Votos brancos: " + e.calcularBrancos()+"%");
         System.out.println("Votos nulos: " + e.calcularNulos()+"%");
