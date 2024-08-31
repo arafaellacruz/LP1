@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61655d3e-a6c7-46e4-9495-82efa1167771" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LP1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa1/tarefa1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/cachorro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/celular.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/gato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/hashiras.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/heroi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/inseto.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/ninja.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/pato.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/src/assets/pessoa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tarefa2/tarefa2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LP1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tarefa2/classes/Cachorro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tarefa2/classes/Cachorro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tarefa2/classes/TestaClasse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tarefa2/classes/TestaClasse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarefa2/src/classes/TestaClasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/tarefa2/src/classes/TestaClasse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +45,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,6 +72,7 @@
       <updated>1724893551356</updated>
       <workItem from="1724893553309" duration="709000" />
       <workItem from="1724903966876" duration="2471000" />
+      <workItem from="1724966660640" duration="4341000" />
     </task>
     <servers />
   </component>
