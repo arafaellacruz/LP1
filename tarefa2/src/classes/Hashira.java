@@ -5,6 +5,9 @@ public class Hashira {
     private String respiracao;
     private String corEspada;
 
+    private String[] defesas = {"bloqueeou", "esquivou", "contra-atacou", "usou defesa especial "};
+    private int i;
+
     public Hashira(String nome, String respiracao, String corEspada) {
         this.nome = nome;
         this.respiracao = respiracao;
@@ -36,7 +39,20 @@ public class Hashira {
     }
 
     public void atacar() {
-      System.out.println("O Hashira "+nome+" usou seu ataque "+respiracao);
+        System.out.println("O Hashira "+nome+" usou seu ataque "+respiracao);
+    }
+
+    public void defender() {
+        System.out.println(nome+" "+defesas[i]+" seu ataque.");
+        i++;
+
+        if(i >= defesas.length) {
+            i = 0;
+        }
+    }
+
+    public void curar() {
+        System.out.println(nome+" está se curando.");
     }
 
 

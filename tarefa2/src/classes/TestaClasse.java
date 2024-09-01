@@ -26,6 +26,7 @@ public class TestaClasse {
             System.out.println("║ 7. O que o gato derrubou no chão?                  ║");
             System.out.println("║ 8. Verificar se o gato está dormindo               ║");
             System.out.println("║ 9. Verificar o nome e respiração do Hashira        ║");
+            System.out.println("║ 10. Verificar status do Hashira                    ║");
             System.out.println("║ 0. Encerrar testes                                 ║");
             System.out.println("╚════════════════════════════════════════════════════╝");
             System.out.print("Escolha uma opção: ");
@@ -59,6 +60,9 @@ public class TestaClasse {
                     break;
                 case 9:
                     hashira.atacar();
+                    break;
+                case 10:
+                    hashira.defender();
                     break;
                 case 0:
                     System.out.println("Encerrando testes...");

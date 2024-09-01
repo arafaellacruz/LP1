@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="61655d3e-a6c7-46e4-9495-82efa1167771" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tarefa2/classes/Cachorro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tarefa2/classes/Cachorro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tarefa2/classes/Hashira.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tarefa2/classes/Hashira.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tarefa2/classes/TestaClasse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tarefa2/classes/TestaClasse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarefa2/src/classes/Hashira.java" beforeDir="false" afterPath="$PROJECT_DIR$/tarefa2/src/classes/Hashira.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarefa2/src/classes/TestaClasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/tarefa2/src/classes/TestaClasse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TestaClasse.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TestaClasse.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\files and docs\codes\LP1\tarefa2\src" />
@@ -72,7 +73,8 @@
       <updated>1724893551356</updated>
       <workItem from="1724893553309" duration="709000" />
       <workItem from="1724903966876" duration="2471000" />
-      <workItem from="1724966660640" duration="4341000" />
+      <workItem from="1724966660640" duration="6235000" />
+      <workItem from="1725201174643" duration="1060000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,7 @@ public class Gato {
     private String raca;
     private int idade;
 
-    private String[] coisasParaDerrubar = {"seu vaso.", "seus livros.", "seu video-game", "suas flores.", "seu tabuleiro de xadrez."};
+    private final String[] coisasParaDerrubar = {"seu vaso.", "seus livros.", "seu video-game", "suas flores.", "seu tabuleiro de xadrez."};
     private int i = 0;
 
     public Gato(String nome, String raca, int idade) {
