@@ -2,10 +2,10 @@ package classes;
 
 public class Heroi {
     private String nome;
-    private int poder;
+    private String poder;
     private int pontosDeVida;
 
-    public Heroi(String nome, int poder, int pontosDeVida, String fraseDeEfeito) {
+    public Heroi(String nome, String poder, int pontosDeVida) {
         this.nome = nome;
         this.poder = poder;
         this.pontosDeVida = pontosDeVida;
@@ -19,11 +19,11 @@ public class Heroi {
         this.nome = nome;
     }
 
-    public int getPoder() {
+    public String getPoder() {
         return poder;
     }
 
-    public void setPoder(int poder) {
+    public void setPoder(String poder) {
         this.poder = poder;
     }
 
@@ -36,14 +36,14 @@ public class Heroi {
     }
 
     public void atacar() {
-        System.out.println(nome+" está comendo.");
+        System.out.println(nome+" está atacando.");
     }
 
-    public void trabalhar() {
-        System.out.println(nome+" está trabalhando.");
+    public void usarHabilidadeEspecial() {
+        System.out.println(nome+" está atacando com habilidades especiais.");
     }
-    public void estudar() {
-        System.out.println(nome+" está estudando.");
+    public void treinar() {
+        System.out.println(nome+" está treinando: "+poder);
     }
 
 }
