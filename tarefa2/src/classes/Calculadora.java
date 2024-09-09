@@ -10,6 +10,7 @@ public class Calculadora {
         }
         this.numerador = numerador;
         this.denominador = denominador;
+        simplificar();
     }
 
     public int getNumerador() {
@@ -18,6 +19,7 @@ public class Calculadora {
 
     public void setNumerador(int numerador) {
         this.numerador = numerador;
+        simplificar();
     }
 
     public int getDenominador() {
@@ -29,6 +31,7 @@ public class Calculadora {
             throw new IllegalArgumentException("O denominador não pode ser zero.");
         }
         this.denominador = denominador;
+        simplificar();
     }
 
     public Calculadora somar(Calculadora outra) {
@@ -67,7 +70,7 @@ public class Calculadora {
         return a;
     }
 
-    public void simplicar() {
+    public void simplificar() {
         int divisor = mdc(numerador, denominador);
         numerador /= divisor;
         denominador /= divisor;
@@ -81,28 +84,5 @@ public class Calculadora {
     @Override
     public String toString() {
         return numerador + "/" + denominador;
-    }
-
-    public static void main(String[] args) {
-        Calculadora f1 = new Calculadora(2, 5);
-        Calculadora f2 = new Calculadora(3, 7);
-
-        Calculadora resultadoSoma = f1.somar(f2);
-        System.out.println("Soma: " + resultadoSoma);
-
-        Calculadora f3 = new Calculadora(4, 3);
-        Calculadora f4 = new Calculadora(2, 7);
-        Calculadora resultadoSubtracao = f3.subtrair(f4);
-        System.out.println("Subtração: " + resultadoSubtracao);
-
-        Calculadora f5 = new Calculadora(2, 3);
-        Calculadora f6 = new Calculadora(5, 4);
-        Calculadora resultadoMultiplicacao = f5.multiplicar(f6);
-        System.out.println("Multiplicação: " + resultadoMultiplicacao);
-
-        Calculadora f7 = new Calculadora(5, 2);
-        Calculadora f8 = new Calculadora(4, 3);
-        Calculadora resultadoDivisao = f7.dividir(f8);
-        System.out.println("Divisão: " + resultadoDivisao);
     }
 }
