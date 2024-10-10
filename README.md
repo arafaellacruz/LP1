@@ -8,3 +8,6 @@ Lista de exercícios para praticar criação de classes, métodos e objetos.
 
 ### Tarefa 2
 Classes (métodos e atributos) juntamente com laço de repetição.
+
+### Tarefa 3
+Criar interfaces para todas as classes (métodos e atributos).
