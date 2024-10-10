@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="426.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp1.tarefa3.CarroController">
+    <Label layoutX="39.0" layoutY="78.0" text="Marca" textFill="#003049" />
+    <TextField fx:id="txtMarca" layoutX="39.0" layoutY="98.0" minWidth="170.0" promptText="Informe a marca do carro" />
+
+    <Label layoutX="39.0" layoutY="128.0" text="Modelo" textFill="#003049" />
+    <TextField fx:id="txtModelo" layoutX="39.0" layoutY="148.0" minWidth="170.0" promptText="Informe o modelo do carro" />
+
+    <Label layoutX="40.0" layoutY="184.0" text="Cor" textFill="#003049" />
+    <TextField fx:id="txtCor" layoutX="39.0" layoutY="204.0" minWidth="170.0" promptText="Informe a cor do carro" />
+
+    <Button fx:id="btnLigar" layoutX="39.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#ligar" style="-fx-background-color: #003049;" text="Ligar" textFill="WHITE" />
+    <Button fx:id="btnAcelerar" layoutX="217.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#acelerar" style="-fx-background-color: #003049;" text="Acelerar" textFill="WHITE" />
+    <Button fx:id="btnFreiar" layoutX="384.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#freiar" style="-fx-background-color: #003049;" text="Freiar" textFill="WHITE" />
+
+    <Label fx:id="lblResultado" layoutX="41.0" layoutY="349.0" text="Clique em um botão de ação e as ações aparecerão aqui." textFill="#003049">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <Text fill="#003049" layoutX="199.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teste - Carro">
+        <font>
+            <Font name="Microsoft Tai Le" size="22.0" />
+        </font>
+    </Text>
+   <ImageView fitHeight="150.0" fitWidth="121.0" layoutX="362.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../assets/carro.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>
