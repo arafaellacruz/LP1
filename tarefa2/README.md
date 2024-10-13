@@ -13,7 +13,6 @@
 
 - Os programas estão no diretório ´/src/classes´
 - O modelo UML e imagens escolhidas estão em ´/src/assets´
-- Os enunciados e testes de mesa estão logo abaixo.
 
   
 ## Testes de mesa
@@ -36,19 +35,6 @@
    | ----- | ---- | ---- | --------------------------- | ----- | ---- |----- | ----- | ----- |
    | $\frac{4}{3}$     | $\frac{2}{7}$   | blalsals | $\frac{4}{3}$  , $\frac{2}{7}$ |  $\frac{4}{3}$  | $\frac{2}{7}$  | f7 | $\frac{4}{3}$  + $\frac{2}{7}$ | $\frac{22}{21}$ |   
 
-### Cálculo 4
-
-
-### Cálculo 5
-
-
-### Cálculo 6
-
-
-### Cálculo 7
-
-
-### Cálculo 8
 
 
    
