@@ -4,6 +4,7 @@ module lp.tarefa {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires java.sql;
 
     opens lp1.tarefa4 to javafx.fxml;
     opens lp1.tarefa4.controller to javafx.fxml;
