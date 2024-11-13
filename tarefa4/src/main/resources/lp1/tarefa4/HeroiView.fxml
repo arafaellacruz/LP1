@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="426.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp1.tarefa4.controller.HeroiController">
+    <Label layoutX="39.0" layoutY="72.0" text="Nome" textFill="#003049" />
+    <TextField fx:id="txtNome" layoutX="39.0" layoutY="92.0" minWidth="210.0" promptText="Informe o nome do herói" />
+
+    <Label layoutX="39.0" layoutY="122.0" text="Poder" textFill="#003049" />
+    <TextField fx:id="txtPoder" layoutX="39.0" layoutY="142.0" minWidth="210.0" promptText="Informe o poder do herói" />
+
+    <Label layoutX="40.0" layoutY="178.0" text="Pontos de Vida" textFill="#003049" />
+    <TextField fx:id="txtPontosDeVida" layoutX="39.0" layoutY="198.0" minWidth="210.0" promptText="Informe os pontos de vida do herói" />
+
+    <Button fx:id="btnAtacar" layoutX="39.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#atacar" style="-fx-background-color: #003049;" text="Atacar" textFill="WHITE" />
+    <Button fx:id="btnEspecial" layoutX="217.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#usarHabilidadeEspecial" style="-fx-background-color: #003049;" text="Habilidade Especial" textFill="WHITE" />
+    <Button fx:id="btnTreinar" layoutX="384.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#treinar" style="-fx-background-color: #003049;" text="Treinar" textFill="WHITE" />
+
+    <Label fx:id="lblResultado" layoutX="41.0" layoutY="349.0" text="Clique em um botão de ação e as ações aparecerão aqui." textFill="#003049">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Text fill="#003049" layoutX="199.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teste - Herói">
+        <font>
+            <Font name="Microsoft Tai Le" size="22.0" />
+        </font>
+    </Text>
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="372.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@assets/heroi.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>
