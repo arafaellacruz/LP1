@@ -3,14 +3,37 @@ package lp1.tarefa4.model;
 import java.time.LocalTime;
 
 public class Cachorro {
+    private int id;
     private String nome;
     private String raca;
     private String cor;
+
+    public Cachorro( int id, String nome, String raca, String cor) {
+        this.id = id;
+        this.nome = nome;
+        this.raca = raca;
+        this.cor = cor;
+    }
 
     public Cachorro(String nome, String raca, String cor) {
         this.nome = nome;
         this.raca = raca;
         this.cor = cor;
+    }
+
+    public Cachorro() {
+        this.id = 0;
+        this.nome = "Desconhecido";
+        this.raca = "Desconhecida";
+        this.cor = "Desconhecida";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
