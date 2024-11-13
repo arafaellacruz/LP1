@@ -11,3 +11,6 @@ Classes (métodos e atributos) juntamente com laço de repetição.
 
 ### Tarefa 3
 Criar interfaces para todas as classes (métodos e atributos).
+
+### Tarefa 4
+Vincular todo projeto feito até aqui ao banco de dados, fazer ajustes necessários nas views, controllers e models.
