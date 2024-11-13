@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="700.0" prefHeight="550.0" prefWidth="950.0" style="-fx-background-color: #003049;" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp1.tarefa4.controller.MenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="700.0" prefHeight="600.0" prefWidth="1090.0" style="-fx-background-color: #003049;" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp1.tarefa4.controller.MenuController">
    <children>
       <AnchorPane layoutY="40.0" prefHeight="462.0" prefWidth="94.0">
          <children>
@@ -94,7 +94,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="contentPane" layoutX="151.0" layoutY="58.0" prefHeight="462.0" prefWidth="770.0" style="-fx-background-color: #ffffff;" />
+      <AnchorPane fx:id="contentPane" layoutX="151.0" layoutY="58.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" />
       <Text fill="WHITE" layoutX="66.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tituloPrincipal" text="Bem-vindo (a) ao Teste de Classes" wrappingWidth="706.3999936580659">
          <font>
             <Font size="20.0" />
