@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,34 +11,47 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="426.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp1.tarefa4.controller.CarroController">
-    <Label layoutX="39.0" layoutY="78.0" text="Marca" textFill="#003049" />
-    <TextField fx:id="txtMarca" layoutX="39.0" layoutY="98.0" minWidth="170.0" promptText="Informe a marca do carro" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="950.0" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lp1.tarefa4.controller.CarroController">
+    <TableView fx:id="tableViewCarros" layoutX="525.0" layoutY="120.0" onSort="#carregarCarros" prefHeight="349.0" prefWidth="392.0">
+        <columns>
+            <TableColumn fx:id="colMarca" prefWidth="117.5999755859375" text="Marca" />
+            <TableColumn fx:id="colModelo" prefWidth="97.5999755859375" text="Modelo" />
+            <TableColumn fx:id="colCor" prefWidth="100.79998779296875" text="Cor" />
+            <TableColumn fx:id="colDelete" prefWidth="60.800048828125" text="Excluir" />
+        </columns>
+    </TableView>
 
-    <Label layoutX="39.0" layoutY="128.0" text="Modelo" textFill="#003049" />
-    <TextField fx:id="txtModelo" layoutX="39.0" layoutY="148.0" minWidth="170.0" promptText="Informe o modelo do carro" />
+    <Label layoutX="43.0" layoutY="87.0" text="Marca" textFill="#003049" />
+    <TextField fx:id="txtMarca" layoutX="43.0" layoutY="107.0" minWidth="170.0" prefHeight="26.0" prefWidth="254.0" promptText="Informe a marca do carro" />
 
-    <Label layoutX="40.0" layoutY="184.0" text="Cor" textFill="#003049" />
-    <TextField fx:id="txtCor" layoutX="39.0" layoutY="204.0" minWidth="170.0" promptText="Informe a cor do carro" />
+    <Label layoutX="43.0" layoutY="152.0" text="Modelo" textFill="#003049" />
+    <TextField fx:id="txtModelo" layoutX="43.0" layoutY="172.0" minWidth="170.0" prefHeight="26.0" prefWidth="254.0" promptText="Informe o modelo do carro" />
 
-    <Button fx:id="btnLigar" layoutX="39.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#ligar" style="-fx-background-color: #003049;" text="Ligar" textFill="WHITE" />
-    <Button fx:id="btnAcelerar" layoutX="217.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#acelerar" style="-fx-background-color: #003049;" text="Acelerar" textFill="WHITE" />
-    <Button fx:id="btnFreiar" layoutX="384.0" layoutY="266.0" minHeight="40.0" minWidth="100.0" onAction="#freiar" style="-fx-background-color: #003049;" text="Freiar" textFill="WHITE" />
+    <Label layoutX="44.0" layoutY="211.0" text="Cor" textFill="#003049" />
+    <TextField fx:id="txtCor" layoutX="43.0" layoutY="231.0" minWidth="170.0" prefHeight="26.0" prefWidth="254.0" promptText="Informe a cor do carro" />
 
-    <Label fx:id="lblResultado" layoutX="41.0" layoutY="349.0" text="Clique em um botão de ação e as ações aparecerão aqui." textFill="#003049">
+    <Button fx:id="btnDirigir" layoutX="44.0" layoutY="350.0" minHeight="40.0" minWidth="100.0" onAction="#dirigir" styleClass="buttonAcoes" text="Dirigir" textFill="WHITE" />
+    <Button fx:id="btnAcelerar" layoutX="223.0" layoutY="350.0" minHeight="40.0" minWidth="100.0" onAction="#acelerar" styleClass="buttonAcoes" text="Acelerar" textFill="WHITE" />
+    <Button fx:id="btnFreiar" layoutX="390.0" layoutY="350.0" minHeight="40.0" minWidth="100.0" onAction="#freiar" styleClass="buttonAcoes" text="Freiar" textFill="WHITE" />
+    <Button fx:id="btnCadastrar" layoutX="44.0" layoutY="272.0" minHeight="40.0" minWidth="100.0" onAction="#cadastrar" styleClass="buttonCadastrar" text="Cadastrar" textFill="WHITE" />
+
+    <Label fx:id="lblResultado" layoutX="43.0" layoutY="403.0" prefHeight="78.0" prefWidth="450.0" styleClass="acoes" text="Clique em um botão de ação e as ações aparecerão aqui." textFill="#003049">
         <font>
-            <Font size="18.0" />
+            <Font size="16.0" />
         </font>
     </Label>
 
-    <Text fill="#003049" layoutX="199.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teste - Carro">
+    <Text fill="#003049" layoutX="43.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tituloDeTelas" text="Carros">
         <font>
             <Font name="Microsoft Tai Le" size="22.0" />
         </font>
     </Text>
-   <ImageView fitHeight="150.0" fitWidth="121.0" layoutX="362.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@assets/carro.jpg" />
-      </image>
-   </ImageView>
+
+    <ImageView fitHeight="176.0" fitWidth="167.0" layoutX="323.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@assets/carro.jpg" />
+        </image>
+    </ImageView>
+
+    <Text fill="#14313d" layoutX="527.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma opção para usar os botões de ações, edite-os ou exclua-os." wrappingWidth="392.0" />
 </AnchorPane>

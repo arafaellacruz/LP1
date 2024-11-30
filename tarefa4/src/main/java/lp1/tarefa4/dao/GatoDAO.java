@@ -1,43 +1,40 @@
 package lp1.tarefa4.dao;
 
-import lp1.tarefa4.model.Cachorro;
+import lp1.tarefa4.model.Gato;
 
 import java.sql.*;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CachorroDAO extends ConexaoDAO {
+public class GatoDAO extends ConexaoDAO {
 
     // POST
-    public int cadastrar(Cachorro cachorro) {
+    public int cadastrar(Gato gato) {
         Connection con = null;
 
         try {
             con = getConnection();
-            String sql = "INSERT INTO cachorro (nome, raca, cor) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO gato (nome, raca, idade) VALUES (?, ?, ?)";
             con.setAutoCommit(false);
 
-            // Usando RETURN_GENERATED_KEYS para obter o ID gerado automaticamente pelo banco de dados.
             PreparedStatement stmt = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            stmt.setString(1, cachorro.getNome());
-            stmt.setString(2, cachorro.getRaca());
-            stmt.setString(3, cachorro.getCor());
+            stmt.setString(1, gato.getNome());
+            stmt.setString(2, gato.getRaca());
+            stmt.setInt(3, gato.getIdade());
 
             int rowsAffected = stmt.executeUpdate();
 
             if (rowsAffected > 0) {
                 ResultSet generatedKeys = stmt.getGeneratedKeys();
                 if (generatedKeys.next()) {
-                    int idGerado = generatedKeys.getInt(1); // Obtém o primeiro ID gerado.
+                    int idGerado = generatedKeys.getInt(1);
                     con.commit();
                     return idGerado;
                 }
             }
 
             con.commit();
-            return -1; // Retorna -1 caso não seja gerado um ID (deve ser raro).
+            return -1;
         } catch (SQLException e) {
             e.printStackTrace();
             try {
@@ -47,7 +44,7 @@ public class CachorroDAO extends ConexaoDAO {
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
-            throw new RuntimeException("Erro ao adicionar o cachorro!");
+            throw new RuntimeException("Erro ao cadastrar o gato!");
         } finally {
             try {
                 if (con != null) {
@@ -61,32 +58,30 @@ public class CachorroDAO extends ConexaoDAO {
         }
     }
 
-
     // GET ALL
-    public List<Cachorro> getCachorros() {
-        List<Cachorro> cachorros = new ArrayList<>();
+    public List<Gato> getGatos() {
+        List<Gato> gatos = new ArrayList<>();
         Connection con = null;
 
         try {
             con = getConnection();
-            String sql = "SELECT * FROM cachorro";
+            String sql = "SELECT * FROM gato";
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
 
             while (rs.next()) {
-                Cachorro cachorro = new Cachorro();
-                cachorro.setId(rs.getInt("id"));
-                cachorro.setNome(rs.getString("nome"));
-                cachorro.setRaca(rs.getString("raca"));
-                cachorro.setCor(rs.getString("cor"));
-                cachorros.add(cachorro);
+                Gato gato = new Gato(
+                        rs.getString("nome"),
+                        rs.getString("raca"),
+                        rs.getInt("idade")
+                );
+                gatos.add(gato);
             }
 
-            return cachorros;
-
+            return gatos;
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Erro ao buscar cachorros!");
+            throw new RuntimeException("Erro ao buscar gatos!");
         } finally {
             try {
                 if (con != null) {
@@ -100,30 +95,29 @@ public class CachorroDAO extends ConexaoDAO {
     }
 
     // GET BY ID
-    public Cachorro getCachorroById(int id) {
-        Cachorro cachorro = null;
+    public Gato getGatoById(int id) {
+        Gato gato = null;
         Connection con = null;
 
         try {
             con = getConnection();
-            String sql = "SELECT * FROM cachorro WHERE id = ?";
+            String sql = "SELECT * FROM gato WHERE id = ?";
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setInt(1, id);
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                cachorro = new Cachorro();
-                cachorro.setId(rs.getInt("id"));
-                cachorro.setNome(rs.getString("nome"));
-                cachorro.setRaca(rs.getString("raca"));
-                cachorro.setCor(rs.getString("cor"));
+                gato = new Gato(
+                        rs.getString("nome"),
+                        rs.getString("raca"),
+                        rs.getInt("idade")
+                );
             }
 
-            return cachorro;
-
+            return gato;
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Erro ao buscar cachorro por ID!");
+            throw new RuntimeException("Erro ao buscar gato por ID!");
         } finally {
             try {
                 if (con != null) {
@@ -137,26 +131,25 @@ public class CachorroDAO extends ConexaoDAO {
     }
 
     // UPDATE
-    public boolean update(Cachorro cachorro) {
+    public boolean update(int id, Gato gato) {
         Connection con = null;
 
         try {
             con = getConnection();
-            String sql = "UPDATE cachorro SET nome = ?, raca = ?, cor = ? WHERE id = ?";
+            String sql = "UPDATE gato SET nome = ?, raca = ?, idade = ? WHERE id = ?";
             PreparedStatement stmt = con.prepareStatement(sql);
 
-            stmt.setString(1, cachorro.getNome());
-            stmt.setString(2, cachorro.getRaca());
-            stmt.setString(3, cachorro.getCor());
-            stmt.setInt(4, cachorro.getId());
+            stmt.setString(1, gato.getNome());
+            stmt.setString(2, gato.getRaca());
+            stmt.setInt(3, gato.getIdade());
+            stmt.setInt(4, id);
 
             int rowsAffected = stmt.executeUpdate();
 
             return rowsAffected > 0;
-
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Erro ao atualizar cachorro!");
+            throw new RuntimeException("Erro ao atualizar gato!");
         } finally {
             try {
                 if (con != null) {
@@ -175,7 +168,7 @@ public class CachorroDAO extends ConexaoDAO {
 
         try {
             con = getConnection();
-            String sql = "DELETE FROM cachorro WHERE id = ?";
+            String sql = "DELETE FROM gato WHERE id = ?";
             PreparedStatement stmt = con.prepareStatement(sql);
 
             stmt.setInt(1, id);
@@ -183,10 +176,9 @@ public class CachorroDAO extends ConexaoDAO {
             int rowsAffected = stmt.executeUpdate();
 
             return rowsAffected > 0;
-
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Erro ao excluir cachorro!");
+            throw new RuntimeException("Erro ao excluir gato!");
         } finally {
             try {
                 if (con != null) {
@@ -198,6 +190,4 @@ public class CachorroDAO extends ConexaoDAO {
             }
         }
     }
-
 }
-
